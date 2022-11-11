@@ -1,0 +1,201 @@
+/* 去除所有外边距内边距 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* 设置字体 */
+
+body {
+    font-family: Arial;
+    padding: 0px;
+    background: #f1f1f1;
+    background-image: url(../image/祝福华水/简约大背景1.jpg);
+}
+
+
+/* 头部标题 */
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #015FAF;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+
+/* 导航条 */
+
+.topnav {
+    height: 58px;
+    overflow: hidden;
+    background-color: rgba(137, 131, 141, .6);
+    display: block;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px 1px;
+    z-index: 10;
+}
+
+
+/* 回到首页 */
+
+.topnav .ddd {
+    margin-right: 100px;
+    margin-left: 80px;
+}
+
+
+/* 导航条链接 */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 58px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+/* 当前页面提示 */
+
+.topnav .currentSheet {
+    background-color: rgb(255, 255, 255);
+    color: #e2ca5b;
+}
+
+
+/* 链接颜色修改 */
+
+.topnav a:hover {
+    background-color: rgb(236, 42, 42);
+    color: #e2ca5b;
+}
+
+
+/* 固定大背景 */
+
+.bbg {
+    width: 1519.2px;
+    height: 544px;
+    margin: 0px;
+    padding: 0px;
+    background: pink url(../image/祝福华水/背景.png) no-repeat;
+    z-index: 9;
+}
+
+
+/* 创建一列 */
+
+.column {
+    width: 60%;
+    margin: 15px auto;
+    background-color: white;
+}
+
+
+/* 文章卡片效果 */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card h2 {
+    color: blue;
+}
+
+
+/* 清除浮动 */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 表单 */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* 底部 */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #0160b0;
+    margin-top: 20px;
+}

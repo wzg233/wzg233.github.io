@@ -1,0 +1,211 @@
+/* 去除所有外边距内边距 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* 设置字体 */
+
+body {
+    font-family: Arial;
+    padding: 0px;
+    background: #f1f1f1;
+}
+
+
+/* 导航条 */
+
+.topnav {
+    height: 58px;
+    overflow: hidden;
+    background-color: rgba(137, 131, 141, .6);
+    display: block;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px 1px;
+    z-index: 10;
+}
+
+
+/* 回到首页 */
+
+.topnav .ddd {
+    margin-right: 100px;
+    margin-left: 80px;
+}
+
+
+/* 导航条链接 */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 58px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+/* 当前页面提示 */
+
+.topnav .currentSheet {
+    background-color: rgb(255, 255, 255);
+    color: #e2ca5b;
+}
+
+
+/* 链接颜色修改 */
+
+.topnav a:hover {
+    background-color: rgb(236, 42, 42);
+    color: #e2ca5b;
+}
+
+
+/* 轮播设置 */
+
+#box {
+    width: 1519.2px;
+    height: 754px;
+    margin: 0 auto;
+    background: url(../image/华水校史/轮播1.jpg) no-repeat;
+    background-size: cover;
+    transition: all 1s;
+    position: relative;
+    z-index: 9;
+}
+
+.icon_left {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    left: 20px;
+}
+
+.icon_right {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    right: 20px;
+}
+
+
+/* 创建两列 */
+
+
+/* Left column */
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    padding-left: 50px;
+}
+
+
+/* 右侧栏 */
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    height: 1000px;
+    background-color: #f1f1f1;
+    padding: 0 50px;
+}
+
+
+/* 右侧图片集 */
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* 文章正文部分 */
+
+.text {
+    /* background-color: #ffffff; */
+    width: 100%;
+    padding: 40px;
+    text-indent: 2em;
+}
+
+.text p,
+.text h3 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.card h2 {
+    color: purple;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+
+/* 文章卡片效果 */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    background-image: url(../image/华水校史/简约大背景1.jpg);
+}
+
+
+/* 清除浮动 */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 底部 */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #0160b0;
+    margin-top: 20px;
+}
